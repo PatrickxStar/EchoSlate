@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=50618&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EchoSlate</title>
@@ -94,23 +94,48 @@
       <p>Please upload your resume below:</p>
 <section class="max-w-lg mx-auto px-4 sm:px-6 lg:px-8 py-12">
   <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-6">Upload Your Resume</h1>
-  
-  
-  <form action="http://localhost:3000/upload" method="post" enctype="multipart/form-data" class="bg-white dark:bg-gray-800 p-6 rounded shadow">
 
-    
-    
+  <form id="resumeUploadForm" enctype="multipart/form-data" class="bg-white dark:bg-gray-800 p-6 rounded shadow">
     <div class="mb-4">
       <label for="resume" class="block text-gray-700 dark:text-gray-300 mb-2">Select Your Resume</label>
       <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" class="w-full" required>
     </div>
-    
     <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition">
       Upload
     </button>
-    
+    <div id="popupMessage" class="mt-4 hidden p-4 rounded text-white"></div>
   </form>
 </section>
+
+<script>
+  document.getElementById('resumeUploadForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+
+    fetch('http://localhost:3000/upload', {
+      method: 'POST',
+      body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.message) {
+        window.location.href = '/users'; 
+      } else {
+        throw new Error('Upload failed');
+      }
+    })
+    .catch(error => {
+      showPopup('Failed to upload resume. Please try again.', 'bg-red-600');
+    });
+  });
+
+  function showPopup(message, bgColor) {
+    const popupMessage = document.getElementById('popupMessage');
+    popupMessage.textContent = message;
+    popupMessage.classList.remove('hidden', 'bg-green-600', 'bg-red-600');
+    popupMessage.classList.add(bgColor);
+  }
+</script>
 
 
     </div>

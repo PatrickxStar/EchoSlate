@@ -3,34 +3,34 @@ const multer = require('multer');
 const pdfParse = require('pdf-parse');
 const fs = require('fs');
 const path = require('path');
+const cors = require('cors');
 
 const app = express();
+app.use(cors({ origin: 'http://localhost:1313' })); // Adjust to your Hugo port if needed
+const upload = multer({ dest: 'uploads/' }); // Multer saves files to 'uploads/' temporarily
 
-// Set up Multer for file upload; files will be temporarily stored in the 'uploads/' folder
-const upload = multer({ dest: 'uploads/' });
-
-// Route to handle the file upload
 app.post('/upload', upload.single('resume'), async (req, res) => {
     try {
-        // Check if a file was uploaded
+        console.log('File upload request received.');
         if (!req.file) {
             return res.status(400).send('No file uploaded.');
         }
 
-        // Get the original file name of the uploaded file
-        const originalFileName = req.file.originalname;
+        // Log current working directory to debug
+        console.log("Current working directory:", process.cwd());
 
-        // Read the uploaded file (PDF)
+        const originalFileName = req.file.originalname;
         const dataBuffer = fs.readFileSync(req.file.path);
         const pdfData = await pdfParse(dataBuffer);
 
-        // Process the PDF and generate markdown content with TOML front matter
+        // Generate the Markdown content
         const markdownContent = `
 +++
 title = "${originalFileName.replace('.pdf', '')}"
 date = "${new Date().toISOString()}"
 type = "resume"
 draft = false
+description = "Full Stack Developer Resume"
 +++
 
 ## Resume Overview
@@ -47,28 +47,28 @@ ${pdfData.text.split('\n').map(line => `> ${line}`).join('\n')}
 - **Upload Date**: ${new Date().toLocaleDateString()}
         `;
 
-        // Create the markdown file name based on the original name (replace .pdf with .md)
-        const markdownFileName = `${originalFileName.replace('.pdf', '')}.md`;
+        // Ensure the 'content/en/resumes' directory exists; if not, create it
+        const markdownDir = path.join(process.cwd(), 'content', 'en', 'resumes'); // Use process.cwd() to get the correct working directory
 
-        // Ensure the 'content/en/resumes' directory exists, if not, create it
-        const markdownDir = path.join(__dirname, 'content', 'en', 'resumes');
         if (!fs.existsSync(markdownDir)) {
             fs.mkdirSync(markdownDir, { recursive: true });
         }
 
         // Write the markdown file to the 'content/en/resumes' directory
+        const markdownFileName = `${originalFileName.replace('.pdf', '')}.md`;
         const markdownFilePath = path.join(markdownDir, markdownFileName);
-        fs.writeFileSync(markdownFilePath, markdownContent);
 
-        // Respond with success message
-        res.status(200).send('Resume uploaded and markdown generated!');
+        fs.writeFileSync(markdownFilePath, markdownContent);
+        console.log(`Markdown file written to: ${markdownFilePath}`);
+
+        // Respond with JSON for the front-end to handle the response
+        res.status(200).json({ message: 'Resume uploaded successfully!' });
     } catch (error) {
         console.error('Error processing the resume:', error);
         res.status(500).send('Error processing the resume.');
     }
 });
 
-// Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
