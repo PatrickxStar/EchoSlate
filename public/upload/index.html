@@ -91,7 +91,20 @@
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-8">Upload</h1>
     <div class="prose dark:prose-dark mb-8">
-      <p>please upload a pdf file</p>
+      <p>Please upload your resume below:</p>
+<section class="max-w-lg mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-6">Upload Your Resume</h1>
+  <form action="/upload/" method="post" enctype="multipart/form-data" class="bg-white dark:bg-gray-800 p-6 rounded shadow">
+    <div class="mb-4">
+      <label for="resume" class="block text-gray-700 dark:text-gray-300 mb-2">Select Your Resume</label>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" class="w-full" required>
+    </div>
+    <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition">
+      Upload
+    </button>
+  </form>
+</section>
+
 
     </div>
 
