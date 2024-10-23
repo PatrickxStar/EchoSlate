@@ -24,27 +24,39 @@ app.post('/upload', upload.single('resume'), async (req, res) => {
         const dataBuffer = fs.readFileSync(req.file.path);
         const pdfData = await pdfParse(dataBuffer);
 
-        // Process the PDF and generate markdown content
+        // Process the PDF and generate markdown content with TOML front matter
         const markdownContent = `
-        ---
-        title: "Generated Resume"
-        draft: false
-        ---
++++
+title = "${originalFileName.replace('.pdf', '')}"
+date = "${new Date().toISOString()}"
+type = "resume"
+draft = false
++++
 
-        ## Resume Content:
-        ${pdfData.text}
+## Resume Overview
+
+Below is the extracted content from the uploaded resume:
+
+${pdfData.text.split('\n').map(line => `> ${line}`).join('\n')}
+
+---
+
+## Original File Information
+
+- **File Name**: ${originalFileName}
+- **Upload Date**: ${new Date().toLocaleDateString()}
         `;
 
         // Create the markdown file name based on the original name (replace .pdf with .md)
         const markdownFileName = `${originalFileName.replace('.pdf', '')}.md`;
 
-        // Ensure the 'content/resumes' directory exists, if not, create it
-        const markdownDir = path.join(__dirname, 'content', `en`,'resumes');
+        // Ensure the 'content/en/resumes' directory exists, if not, create it
+        const markdownDir = path.join(__dirname, 'content', 'en', 'resumes');
         if (!fs.existsSync(markdownDir)) {
             fs.mkdirSync(markdownDir, { recursive: true });
         }
 
-        // Write the markdown file to the 'content/resumes' directory
+        // Write the markdown file to the 'content/en/resumes' directory
         const markdownFilePath = path.join(markdownDir, markdownFileName);
         fs.writeFileSync(markdownFilePath, markdownContent);
 
