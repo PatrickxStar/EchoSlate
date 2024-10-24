@@ -1,68 +1,77 @@
 const express = require('express');
 const multer = require('multer');
-const pdfParse = require('pdf-parse');
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:1313' })); // Adjust to your Hugo port if needed
-const upload = multer({ dest: 'uploads/' }); // Multer saves files to 'uploads/' temporarily
+app.use(cors({ origin: 'http://localhost:1313' }));
+app.use(express.urlencoded({ extended: true }));
+
+const upload = multer({ dest: 'uploads/' });
 
 app.post('/upload', upload.single('resume'), async (req, res) => {
     try {
-        console.log('File upload request received.');
         if (!req.file) {
             return res.status(400).send('No file uploaded.');
         }
 
-        // Log current working directory to debug
-        console.log("Current working directory:", process.cwd());
+        const { name, email, phone, github } = req.body;
 
         const originalFileName = req.file.originalname;
-        const dataBuffer = fs.readFileSync(req.file.path);
-        const pdfData = await pdfParse(dataBuffer);
+        const fileExtension = path.extname(originalFileName);
+        const newFileName = originalFileName.replace(fileExtension, '') + Date.now() + fileExtension;
 
-        // Generate the Markdown content
+        // Move the uploaded file to the Hugo static directory
+        const destinationPath = path.join(process.cwd(), 'static', 'files', newFileName);
+        fs.renameSync(req.file.path, destinationPath);
+
+        // Create a markdown file that includes contact info and links to the PDF file
         const markdownContent = `
 +++
-title = "${originalFileName.replace('.pdf', '')}"
+title = "${name}'s Resume"
 date = "${new Date().toISOString()}"
 type = "resume"
 draft = false
-description = "Full Stack Developer Resume"
+description = "Resume for ${name}"
+name = "${name}"
+email = "${email}"
+phone = "${phone}"
+github = "${github}"
+resumeFile = "${newFileName}"
 +++
 
-## Resume Overview
+## Contact Information
 
-Below is the extracted content from the uploaded resume:
-
-${pdfData.text.split('\n').map(line => `> ${line}`).join('\n')}
+- **Name:** ${name}
+- **Email:** [${email}](mailto:${email})
+- **Phone:** ${phone}
+- **GitHub:** [${github}](${github})
 
 ---
 
-## Original File Information
+## View Resume
 
-- **File Name**: ${originalFileName}
-- **Upload Date**: ${new Date().toLocaleDateString()}
-        `;
+You can [download the resume](/files/${newFileName}) or view it below:
+
+<embed src="/files/${newFileName}" width="800" height="600" type="application/pdf" />
+`;
 
         // Ensure the 'content/en/resumes' directory exists; if not, create it
-        const markdownDir = path.join(process.cwd(), 'content', 'en', 'resumes'); // Use process.cwd() to get the correct working directory
-
+        const markdownDir = path.join(process.cwd(), 'content', 'en', 'resumes');
         if (!fs.existsSync(markdownDir)) {
             fs.mkdirSync(markdownDir, { recursive: true });
         }
 
         // Write the markdown file to the 'content/en/resumes' directory
-        const markdownFileName = `${originalFileName.replace('.pdf', '')}.md`;
+        const markdownFileName = `${name.replace(' ', '_')}_resume.md`;
         const markdownFilePath = path.join(markdownDir, markdownFileName);
 
         fs.writeFileSync(markdownFilePath, markdownContent);
         console.log(`Markdown file written to: ${markdownFilePath}`);
 
-        // Respond with JSON for the front-end to handle the response
-        res.status(200).json({ message: 'Resume uploaded successfully!' });
+        // Redirect to users page after successful upload
+        res.status(200).json({ message: 'Resume uploaded and displayed successfully!' });
     } catch (error) {
         console.error('Error processing the resume:', error);
         res.status(500).send('Error processing the resume.');
