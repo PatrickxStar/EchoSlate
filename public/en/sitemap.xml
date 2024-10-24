@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-18T11:17:47-04:00</lastmod>
+    <lastmod>2024-10-23T16:55:42+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -14,6 +14,25 @@
                 hreflang="en"
                 href="http://localhost:1313/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/resumes/resumecse--2/</loc>
+    <lastmod>2024-10-23T16:55:42+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/resumes/</loc>
+    <lastmod>2024-10-23T16:55:42+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/resumes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/resumes/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/resumes/resume24/</loc>
+    <lastmod>2024-10-23T15:49:41+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/home/</loc>
     <lastmod>2024-10-18T11:17:47-04:00</lastmod>
@@ -107,19 +126,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/tags/react/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/resumes/</loc>
-    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/resumes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/resumes/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
