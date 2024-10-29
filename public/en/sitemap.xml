@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-28T14:19:02+00:00</lastmod>
+    <lastmod>2024-10-29T14:24:04+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -15,13 +15,26 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/users/resumes/</loc>
-    <lastmod>2024-10-28T14:19:02+00:00</lastmod>
+    <loc>http://localhost:1313/users/resumes/patrick_resume/</loc>
+    <lastmod>2024-10-29T14:24:04+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/users/resumes/simon_chang_resume/</loc>
-    <lastmod>2024-10-28T14:19:02+00:00</lastmod>
+    <loc>http://localhost:1313/users/resumes/</loc>
+    <lastmod>2024-10-29T14:24:04+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/users/</loc>
+    <lastmod>2024-10-29T14:24:04+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/users/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/users/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/users/resumes/simon_chang_resume/</loc>
     <lastmod>2024-10-28T14:19:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/home/</loc>
@@ -53,26 +66,7 @@
     <loc>http://localhost:1313/users/resumes/dean/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/users/resumes/tommy/</loc>
-    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/full-stack-development/</loc>
-    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/users/resumes/jane-doe/</loc>
-    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/users/resumes/jane-doe/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/users/resumes/jane-doe/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/javascript/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/node.js/</loc>
@@ -88,9 +82,6 @@
                 href="http://localhost:1313/tags/node.js/"
                 />
   </url><url>
-    <loc>http://localhost:1313/users/resumes/patrick/</loc>
-    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/react/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -103,12 +94,6 @@
                 hreflang="en"
                 href="http://localhost:1313/tags/react/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/users/resumes/ryan/</loc>
-    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/users/resumes/simon/</loc>
-    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
