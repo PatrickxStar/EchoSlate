@@ -26,16 +26,6 @@
       "content": ""
     },
     {
-      "title": "Contact",
-      "permalink": "/es/contact/",
-      "content": ""
-    },
-    {
-      "title": "About",
-      "permalink": "/es/about/",
-      "content": "\rWelcome to EchoSlate. We are committed to showcasing your talents.\r"
-    },
-    {
       "title": "Desarrollo Full Stack",
       "permalink": "/es/tags/desarrollo-full-stack/",
       "content": ""
@@ -74,5 +64,15 @@
       "title": "Categories",
       "permalink": "/es/categories/",
       "content": ""
+    },
+    {
+      "title": "Contáctanos",
+      "permalink": "/es/contact/",
+      "content": "\rContactar a EchoSlate\r¡Nos encantaría saber de ti! Ya sea que tengas preguntas sobre nuestra plataforma, necesites soporte o desees compartir tus comentarios, no dudes en comunicarte utilizando el siguiente formulario o a través de nuestra información de contacto.\nContact Us\rName\rEmail\rMessage\rSubmit\rOtros Métodos de Contacto\rCorreo Electrónico: support@echoslate.com\rTwitter: @EchoSlate\rLinkedIn: EchoSlate en LinkedIn\r"
+    },
+    {
+      "title": "Gracias",
+      "permalink": "/es/thank-you.md/",
+      "content": "\r¡Gracias!\rGracias por comunicarte con nosotros. Revisaremos tu mensaje y nos pondremos en contacto contigo lo antes posible.\nVolver al Inicio\r"
     }
 ]

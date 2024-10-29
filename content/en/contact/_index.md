@@ -1,15 +1,17 @@
 +++
-title = "Edit Profile"
-description = "Edit Your EchoSlate Profile"
+title = "Contact Us"
+description = "Get in touch with the EchoSlate team for inquiries, support, or feedback."
 draft = false
 +++
 
-# Edit Your Profile
+# Contact EchoSlate
 
-Update your personal information, add new projects, and manage your resume.
+We'd love to hear from you! Whether you have questions about our platform, need support, or want to share your feedback, feel free to reach out using the form below.
 
-- **Personal Details**: Update your name, contact info, and summary.
-- **Projects**: Add or remove projects you've worked on.
-- **Resume**: Upload a new resume or update existing one.
+{{< contact-form >}}
 
-[Save Changes](/dashboard/)
+## **Other Contact Methods**
+
+- **Email:** [support@echoslate.com](mailto:support@echoslate.com)
+- **Twitter:** [@EchoSlate](https://twitter.com/EchoSlate)
+- **LinkedIn:** [EchoSlate on LinkedIn](https://www.linkedin.com/company/echoslate)

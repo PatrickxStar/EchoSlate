@@ -39,34 +39,28 @@ enableMissingTranslationPlaceholders = true
       weight = 2
 
     [[languages.en.menu.main]]
-      identifier = "edit"
-      name = "Edit"
-      url = "/edit/"
-      weight = 3
-
-    [[languages.en.menu.main]]
       identifier = "upload"
       name = "Upload"
       url = "/upload/"
-      weight = 4
+      weight = 3
 
     [[languages.en.menu.main]]
       identifier = "search"
       name = "Search"
       url = "/search/"
-      weight = 5
+      weight = 4
 
     [[languages.en.menu.main]]
       identifier = "about"
       name = "About"
       url = "/about/"
-      weight = 6
+      weight = 5
 
     [[languages.en.menu.main]]
       identifier = "contact"
       name = "Contact"
       url = "/contact/"
-      weight = 7
+      weight = 6
 
   [languages.es]
     languageName = "Español"
@@ -88,34 +82,28 @@ enableMissingTranslationPlaceholders = true
       weight = 2
 
     [[languages.es.menu.main]]
-      identifier = "edit"
-      name = "Editar"
-      url = "/es/edit/"
-      weight = 3
-
-    [[languages.es.menu.main]]
       identifier = "upload"
       name = "Subir"
       url = "/es/upload/"
-      weight = 4
+      weight = 3
 
     [[languages.es.menu.main]]
       identifier = "search"
       name = "Buscar"
       url = "/es/search/"
-      weight = 5
+      weight = 4
 
     [[languages.es.menu.main]]
       identifier = "about"
       name = "Acerca de"
       url = "/es/about/"
-      weight = 6
+      weight = 5
 
     [[languages.es.menu.main]]
       identifier = "contact"
       name = "Contacto"
       url = "/es/contact/"
-      weight = 7
+      weight = 6
 
 [markup]
   [markup.goldmark]
