@@ -3,12 +3,7 @@
     {
       "title": "Home",
       "permalink": "/",
-      "content": " Welcome to EchoSlate EchoSlate is your digital platform to showcase resumes and projects in Full Stack Development, Data Analytics, and Cybersecurity.\nCreate a profile to highlight your skills. Upload your resume and share your experience. Connect with professionals in your field. Get Started | Learn More "
-    },
-    {
-      "title": "Patrick's Resume",
-      "permalink": "/users/resumes/patrick_resume/",
-      "content": " Contact Information Name: Patrick Email: patrickxiong0825@gmail.com Phone: 7104589794 GitHub: https://github.com/ Introduction (704) 605-6481 patrickdxiong@gmail.com https://www.linkedin.com/in/patrick- xiong0825? CONTACT SUMMARY TECHNICAL | SOFT\nEducation EDUCATION\nSkills SKILLS Collaborative team player with excellent communication skills, committed to delivering high-quality, innovative solutions in a fast-paced environment. Proven ability to work effectively both independently and within a team to achieve project goals. CERTIFICATIONS PATRICK D. XIONG SOFTWARE DEVELOPER Java Apprentice Wiley Edge | Hoboken, NJ | Remote Developed conversion and system implementation plans. Built databases and table structures for web applications. Inspected equipment, assessed functionality and optimized controls. Designed and implemented scalable applications for data extraction and analysis. Tested and deployed scalable and highly available software products. IT Technician OneSpotMD Primary and Urgent care | Charlotte, NC Managed system-wide operating system and software deployments as well as related software upgrade problems. Responded to support requests from end-users and patiently walked individuals through basic troubleshooting tasks. Performed troubleshooting and repaired peripheral devices such as printers, and scanners. Google Data Analytics AWS Cloud Practitioner DevOps Foundations Google Technical Support Fundamentals Java Level 4 - Full Stack Development Google Cloud Platform Fundamentals Full-Stack Apprentice Stiegler Edtech | Wilmington, NC | Vendor Full-stack Development: Learn JavaScript, HTML, CSS, and React for comprehensive web development. Career Growth: Gain skills to become financially free and support your family.\nExperience WORK EXPERIENCES Programming (Java) Infrastructure SQL System Administration IT Support CSS HTML JavaScript Bachelor\u0026rsquo;s of Arts in Biology University of North Carolina at Charlotte Associates of Arts Catawba Valley Community College Help Desk Analyst CAT | Weisiger Group | Liftone - Charlotte, NC | Vendor Provided technical support and troubleshooting assistance to end-users in resolving hardware and software issues. Conducted training sessions for end-users on the use of new laptops and software applications to ensure smooth transition and optimal utilization. Collaborated with cross-functional teams to streamline processes, improve efficiency, and enhance user experience in the context of IT support and laptop replacement initiatives. Dedicated and skilled Software Developer with a strong foundation in HTML, CSS, and JavaScript. Proficient in creating responsive, user-friendly web applications and ensuring cross-browser compatibility. Experienced in developing dynamic and interactive features to enhance user experience. Strong problem-solving abilities and a passion for continuous learning and adapting to new technologies. Practical Experience: Engage in hands-on projects to apply what you learn. Personal Development: Strive to become the best version of yourself through continuous learning. Worked with SQL databases Communication Teamwork Leadership Critical Thinking Time Management\nView Resume You can download the resume or view it below:\n"
+      "content": "\rWelcome to EchoSlate\rEchoSlate is your digital platform to showcase resumes and projects in Full Stack Development, Data Analytics, and Cybersecurity.\nCreate a profile to highlight your skills. Upload your resume and share your experience. Connect with professionals in your field. Get Started\r| Learn More\r"
     },
     {
       "title": "Resumes",
@@ -16,14 +11,24 @@
       "content": "This section displays a collection of user resumes.\n"
     },
     {
+      "title": "test's Resume",
+      "permalink": "/users/resumes/test_resume/",
+      "content": "\rContact Information\rName: test Email: test@gmail.com\rPhone: 1234567890 GitHub: https://github.com/\rIntroduction\rRyan Panagrosso Wilmington, NC 28403 | (860)334-5848 | Panagrosso.ryan@gmail.com\rEducation\rEducation University of North Carolina Wilmington (UNCW) October 2017 – May 2023 GPA: 3.023 Bachelor’s in Marine Biology with a focus on Conservation.\nSkills\rSkills/Qualifications • BioWork Certification • PADI Advanced Open Water Scuba Diving Certification • American Sailing Association ASA 101 Certification 2019 • Secret Security Clearance • Computer skills in Microsoft Word, Excel, PowerPoint, Outlook • 4 years of college lab work 30-day wilderness trip learning risk management, conservation, and leadership skills.\nExperience\r• Experienced in following SOPs • Focus on safety first Work Experience Human Resource Specialist in the US Army National Guard October 2016 – Present • Maintained personal equipment and ensured other equipment was cleaned and correctly stored after use. • Successfully managed a small diverse group of individuals in conduct of individual tasks and assignments. • Instructed group physical training to a group of 10 soldiers. • Helped soldiers maintain and improve their weight training by instructing proper form. • Selected to provide instruction to more than 40 soldiers. • Maintained a clean and sanitized working space. • Ensured safe procedures were followed at ranges. • Followed SOPs to ensure equipment was properly accounted for and maintained. • Trained to aid personnel with setting up insurances, help with pay issues, and personnel tracking which includes one on one contact engaging remotely or face-to-face. • Engaged with a large diverse group of individuals from different backgrounds. • Two years of academic laboratory experience in General chemistry, Organic chemistry, and Genetics. • Familiar in distillation techniques. gas chromatography, and IR spectroscopy • Familiar with lab equipment and experienced in data entry in Excel. • Well versed in Microscopy and studying microorganisms. • Familiar with biological sampling techniques such as gill net fishing, trawling, and dredging. • Experience in species identification • Involved in Scuba club from 2019-2022 • Involved in Plastic Ocean project from 2020-2021 • Involved in Marine Mammal Stranding Program 2023 o Received Level A data sheet training. BioWork Certificate at Central Carolina Community College (CCCC) June 2021 • Familiarized with cGMP and SOPs. • Practiced and familiar with gowning procedures for aseptic environments and environmental monitoring. • Experienced using autoclave, incubator, and bio hoods • Experience in creating growth medium. National Outdoor Leadership School (NOLS) Summer 2014\nView Resume\rYou can download the resume\ror view it below:\n"
+    },
+    {
       "title": "Usuarios",
       "permalink": "/users/",
-      "content": " Nuestros Usuarios Explora los currículums de profesionales que muestran sus habilidades y experiencia.\n"
+      "content": "\rNuestros Usuarios\rExplora los currículums de profesionales que muestran sus habilidades y experiencia.\n"
+    },
+    {
+      "title": "Patrick's Resume",
+      "permalink": "/users/resumes/patrick_resume/",
+      "content": "\rContact Information\rName: Patrick Email: patrickxiong0825@gmail.com\rPhone: 7104589794 GitHub: https://github.com/\rIntroduction\r(704) 605-6481 patrickdxiong@gmail.com\rhttps://www.linkedin.com/in/patrick-\rxiong0825? CONTACT SUMMARY TECHNICAL | SOFT\nEducation\rEDUCATION\nSkills\rSKILLS Collaborative team player with excellent communication skills, committed to delivering high-quality, innovative solutions in a fast-paced environment. Proven ability to work effectively both independently and within a team to achieve project goals. CERTIFICATIONS PATRICK D. XIONG SOFTWARE DEVELOPER Java Apprentice Wiley Edge | Hoboken, NJ | Remote Developed conversion and system implementation plans. Built databases and table structures for web applications. Inspected equipment, assessed functionality and optimized controls. Designed and implemented scalable applications for data extraction and analysis. Tested and deployed scalable and highly available software products. IT Technician OneSpotMD Primary and Urgent care | Charlotte, NC Managed system-wide operating system and software deployments as well as related software upgrade problems. Responded to support requests from end-users and patiently walked individuals through basic troubleshooting tasks. Performed troubleshooting and repaired peripheral devices such as printers, and scanners. Google Data Analytics AWS Cloud Practitioner DevOps Foundations Google Technical Support Fundamentals Java Level 4 - Full Stack Development Google Cloud Platform Fundamentals Full-Stack Apprentice Stiegler Edtech | Wilmington, NC | Vendor Full-stack Development: Learn JavaScript, HTML, CSS, and React for comprehensive web development. Career Growth: Gain skills to become financially free and support your family.\nExperience\rWORK EXPERIENCES Programming (Java) Infrastructure SQL System Administration IT Support CSS HTML JavaScript Bachelor\u0026rsquo;s of Arts in Biology University of North Carolina at Charlotte Associates of Arts Catawba Valley Community College Help Desk Analyst CAT | Weisiger Group | Liftone - Charlotte, NC | Vendor Provided technical support and troubleshooting assistance to end-users in resolving hardware and software issues. Conducted training sessions for end-users on the use of new laptops and software applications to ensure smooth transition and optimal utilization. Collaborated with cross-functional teams to streamline processes, improve efficiency, and enhance user experience in the context of IT support and laptop replacement initiatives. Dedicated and skilled Software Developer with a strong foundation in HTML, CSS, and JavaScript. Proficient in creating responsive, user-friendly web applications and ensuring cross-browser compatibility. Experienced in developing dynamic and interactive features to enhance user experience. Strong problem-solving abilities and a passion for continuous learning and adapting to new technologies. Practical Experience: Engage in hands-on projects to apply what you learn. Personal Development: Strive to become the best version of yourself through continuous learning. Worked with SQL databases Communication Teamwork Leadership Critical Thinking Time Management\nView Resume\rYou can download the resume\ror view it below:\n"
     },
     {
       "title": "Simon Chang's Resume",
       "permalink": "/users/resumes/simon_chang_resume/",
-      "content": " Contact Information Name: Simon Chang Email: simonc691@gmail.com Phone: 7634862531 GitHub: https://github.com/M3SE Introduction SIMON CHANG simonc2194@yahoo.com 763-486-2531 Wilmington, NC 28411 Versatile and skilled full-stack developer with expertise in both front-end and back-end technologies. Proficient in HTML, CSS, JavaScript, Node.js, APIs, SQL, Java, and full-stack web development frameworks. Demonstrates strong problem-solving abilities and a proactive approach to project management. Adept at working in collaborative team environments, applying effective communication\nEducation EDUCATION\nSkills and teamwork skills to deliver innovative and cohesive solutions. Meticulous attention to detail, ensuring optimal functionality and performance through rigorous testing and debugging. Committed to continuous learning and adapting to new technologies, enhancing overall project outcomes. FULL-STACK DEVELOPER Stiegler EdTech - Career Technology Apprentice (CTAC) Wilmington, NC • 05/2024 - 11/2024 FedEx Corporation - Logistics Operations Specialist Kannapolis, NC • 03/2022 - 07/2022 WORK HISTORY Established foundational and advanced skills in computing, front-end development, JavaScript, Node.js, APIs, SQL, Java, and full-stack web development. • Actively engaged in team projects, fostering strong teamwork and communication skills while applying technical knowledge to real-world scenarios. • Demonstrated ability to quickly adapt to new technologies and methodologies, continuously enhancing skills through on-the-job training and specialized elective tracks in Full-Stack Development, Data Analytics, Cyber Security, and Project Management. • Applied Full-Stack Development Expertise in building and deploying full-stack web applications, utilizing MVC models, Junit testing, and modern development tools like Git/GitHub. • Successfully managed and streamlined the unloading process of packages from trucks, demonstrating strong teamwork and coordination skills essential in logistics operations. • Maintained detailed records of truck operations and package logistics using Microsoft Excel, ensuring precise data management and reporting. • Promoted safety and operational efficiency through effective communication, facilitating cross-functional team support and enhancing problem-solving capabilities. • Adapted to varying operational needs by assisting in multiple areas of the warehouse, showcasing flexibility and a proactive approach in managing tasks and resources. • HTML CSS JavaScript Node.js APIs SQL Java Jira Figma TECHNICAL SKILLS Team Collaboration Communication Skills Adaptability and Flexibility Detail-Oriented and Organized Problem-Solving Time Management SOFT SKILLS Rocky River High School Charlotte, NC • 06/2021 High School Diploma\nExperience No content available.\nView Resume You can download the resume or view it below:\n"
+      "content": "\rContact Information\rName: Simon Chang Email: simonc691@gmail.com\rPhone: 7634862531 GitHub: https://github.com/M3SE\rIntroduction\rSIMON CHANG simonc2194@yahoo.com\r763-486-2531 Wilmington, NC 28411 Versatile and skilled full-stack developer with expertise in both front-end and back-end technologies. Proficient in HTML, CSS, JavaScript, Node.js, APIs, SQL, Java, and full-stack web development frameworks. Demonstrates strong problem-solving abilities and a proactive approach to project management. Adept at working in collaborative team environments, applying effective communication\nEducation\rEDUCATION\nSkills\rand teamwork skills to deliver innovative and cohesive solutions. Meticulous attention to detail, ensuring optimal functionality and performance through rigorous testing and debugging. Committed to continuous learning and adapting to new technologies, enhancing overall project outcomes. FULL-STACK DEVELOPER Stiegler EdTech - Career Technology Apprentice (CTAC) Wilmington, NC • 05/2024 - 11/2024 FedEx Corporation - Logistics Operations Specialist Kannapolis, NC • 03/2022 - 07/2022 WORK HISTORY Established foundational and advanced skills in computing, front-end development, JavaScript, Node.js, APIs, SQL, Java, and full-stack web development. • Actively engaged in team projects, fostering strong teamwork and communication skills while applying technical knowledge to real-world scenarios. • Demonstrated ability to quickly adapt to new technologies and methodologies, continuously enhancing skills through on-the-job training and specialized elective tracks in Full-Stack Development, Data Analytics, Cyber Security, and Project Management. • Applied Full-Stack Development Expertise in building and deploying full-stack web applications, utilizing MVC models, Junit testing, and modern development tools like Git/GitHub. • Successfully managed and streamlined the unloading process of packages from trucks, demonstrating strong teamwork and coordination skills essential in logistics operations. • Maintained detailed records of truck operations and package logistics using Microsoft Excel, ensuring precise data management and reporting. • Promoted safety and operational efficiency through effective communication, facilitating cross-functional team support and enhancing problem-solving capabilities. • Adapted to varying operational needs by assisting in multiple areas of the warehouse, showcasing flexibility and a proactive approach in managing tasks and resources. • HTML CSS JavaScript Node.js APIs SQL Java Jira Figma TECHNICAL SKILLS Team Collaboration Communication Skills Adaptability and Flexibility Detail-Oriented and Organized Problem-Solving Time Management SOFT SKILLS Rocky River High School Charlotte, NC • 06/2021 High School Diploma\nExperience\rNo content available.\nView Resume\rYou can download the resume\ror view it below:\n"
     },
     {
       "title": "Home",
@@ -33,17 +38,17 @@
     {
       "title": "Upload",
       "permalink": "/upload/",
-      "content": "Please upload your resume below:\nUpload Your Resume Name Email Phone GitHub Upload Profile Image Select Your Resume Upload "
+      "content": "Please upload your resume below:\nUpload Your Resume\rName\rEmail\rPhone\rGitHub\rUpload Profile Image\rSelect Your Resume\rUpload\r"
     },
     {
       "title": "Dean Mastria",
       "permalink": "/users/resumes/dean/",
-      "content": " Dean Mastria Email: jane.doe@example.com Phone: (123) 456-7890\nLocation: San Francisco, CA, USA\nLinkedIn: linkedin.com/in/deanmastria GitHub: github.com/deanmastria Download Resume PDF "
+      "content": "\rDean Mastria\rEmail: jane.doe@example.com\rPhone: (123) 456-7890\nLocation: San Francisco, CA, USA\nLinkedIn: linkedin.com/in/deanmastria\rGitHub: github.com/deanmastria\rDownload Resume PDF\r"
     },
     {
       "title": "Dean Mastria",
       "permalink": "/users/resumes/tommy/",
-      "content": " Dean Mastria Email: jane.doe@example.com Phone: (123) 456-7890\nLocation: San Francisco, CA, USA\nLinkedIn: linkedin.com/in/deanmastria GitHub: github.com/deanmastria Download Resume PDF "
+      "content": "\rDean Mastria\rEmail: jane.doe@example.com\rPhone: (123) 456-7890\nLocation: San Francisco, CA, USA\nLinkedIn: linkedin.com/in/deanmastria\rGitHub: github.com/deanmastria\rDownload Resume PDF\r"
     },
     {
       "title": "Full Stack Development",
@@ -53,7 +58,7 @@
     {
       "title": "Jane Doe",
       "permalink": "/users/resumes/jane-doe/",
-      "content": " Dean Mastria Email: jane.doe@example.com Phone: (123) 456-7890\nLocation: San Francisco, CA, USA\nLinkedIn: linkedin.com/in/deanmastria GitHub: github.com/deanmastria Download Resume PDF "
+      "content": "\rDean Mastria\rEmail: jane.doe@example.com\rPhone: (123) 456-7890\nLocation: San Francisco, CA, USA\nLinkedIn: linkedin.com/in/deanmastria\rGitHub: github.com/deanmastria\rDownload Resume PDF\r"
     },
     {
       "title": "JavaScript",
@@ -68,7 +73,7 @@
     {
       "title": "Patrick Xiong",
       "permalink": "/users/resumes/patrick/",
-      "content": " Dean Mastria Email: jane.doe@example.com Phone: (123) 456-7890\nLocation: San Francisco, CA, USA\nLinkedIn: linkedin.com/in/deanmastria GitHub: github.com/deanmastria Download Resume PDF "
+      "content": "\rDean Mastria\rEmail: jane.doe@example.com\rPhone: (123) 456-7890\nLocation: San Francisco, CA, USA\nLinkedIn: linkedin.com/in/deanmastria\rGitHub: github.com/deanmastria\rDownload Resume PDF\r"
     },
     {
       "title": "React",
@@ -78,12 +83,12 @@
     {
       "title": "Ryan Panagrosso",
       "permalink": "/users/resumes/ryan/",
-      "content": " Dean Mastria Email: jane.doe@example.com Phone: (123) 456-7890\nLocation: San Francisco, CA, USA\nLinkedIn: linkedin.com/in/deanmastria GitHub: github.com/deanmastria Download Resume PDF "
+      "content": "\rDean Mastria\rEmail: jane.doe@example.com\rPhone: (123) 456-7890\nLocation: San Francisco, CA, USA\nLinkedIn: linkedin.com/in/deanmastria\rGitHub: github.com/deanmastria\rDownload Resume PDF\r"
     },
     {
       "title": "Simon Chang",
       "permalink": "/users/resumes/simon/",
-      "content": " Dean Mastria Email: jane.doe@example.com Phone: (123) 456-7890\nLocation: San Francisco, CA, USA\nLinkedIn: linkedin.com/in/deanmastria GitHub: github.com/deanmastria Download Resume PDF "
+      "content": "\rDean Mastria\rEmail: jane.doe@example.com\rPhone: (123) 456-7890\nLocation: San Francisco, CA, USA\nLinkedIn: linkedin.com/in/deanmastria\rGitHub: github.com/deanmastria\rDownload Resume PDF\r"
     },
     {
       "title": "Tags",
@@ -98,17 +103,17 @@
     {
       "title": "Edit Profile",
       "permalink": "/about/",
-      "content": " Edit Your Profile Update your personal information, add new projects, and manage your resume.\nPersonal Details: Update your name, contact info, and summary. Projects: Add or remove projects you\u0026rsquo;ve worked on. Resume: Upload a new resume or update existing one. Save Changes "
+      "content": "\rEdit Your Profile\rUpdate your personal information, add new projects, and manage your resume.\nPersonal Details: Update your name, contact info, and summary. Projects: Add or remove projects you\u0026rsquo;ve worked on. Resume: Upload a new resume or update existing one. Save Changes\r"
     },
     {
       "title": "Edit Profile",
       "permalink": "/contact/",
-      "content": " Edit Your Profile Update your personal information, add new projects, and manage your resume.\nPersonal Details: Update your name, contact info, and summary. Projects: Add or remove projects you\u0026rsquo;ve worked on. Resume: Upload a new resume or update existing one. Save Changes "
+      "content": "\rEdit Your Profile\rUpdate your personal information, add new projects, and manage your resume.\nPersonal Details: Update your name, contact info, and summary. Projects: Add or remove projects you\u0026rsquo;ve worked on. Resume: Upload a new resume or update existing one. Save Changes\r"
     },
     {
       "title": "Edit Profile",
       "permalink": "/edit/",
-      "content": " Edit Your Profile Update your personal information, add new projects, and manage your resume.\nPersonal Details: Update your name, contact info, and summary. Projects: Add or remove projects you\u0026rsquo;ve worked on. Resume: Upload a new resume or update existing one. Save Changes "
+      "content": "\rEdit Your Profile\rUpdate your personal information, add new projects, and manage your resume.\nPersonal Details: Update your name, contact info, and summary. Projects: Add or remove projects you\u0026rsquo;ve worked on. Resume: Upload a new resume or update existing one. Save Changes\r"
     },
     {
       "title": "Search",

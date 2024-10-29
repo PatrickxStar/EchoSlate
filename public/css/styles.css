@@ -1253,6 +1253,23 @@ video {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(37 99 235 / var(--tw-ring-opacity));
 }
+/* General text color for light mode */
+body {
+    color: #333; /* Default dark text color for light mode */
+}
+
+/* Dark mode text color */
+.dark body,
+.dark p,
+.dark li,
+.dark span {
+    color: #ffffff; /* White text color for dark mode */
+}
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6,
+.dark b, .dark strong {
+    color:#9ca3af;
+}
+
 .dark\:bg-gray-700:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
