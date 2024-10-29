@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <link rel="stylesheet" href="{{ "/css/styles.css" | relURL }}">
+  {{ block "css" . }}{{ end }}
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh; margin: 0; padding: 0;" class="bg-gray-100 dark:bg-gray-800 dark:text-white">
+
+  <!-- Header -->
+  {{ partial "header.html" . }}
+
+  <!-- Main Content (flex-grow allows the content to push footer down) -->
+  <div style="flex-grow: 1;">
+    <main class="py-16">
+      {{ block "main" . }}
+      {{ end }}
+    </main>
+  </div>
+
+  <!-- Footer -->
+  {{ partial "footer.html" . }}
+
+  <!-- Firebase SDK Initialization -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyA9w_PQS8HnG4q4PjW8fQN1isBzftDeZBE",
+      authDomain: "testechoslate.firebaseapp.com",
+      projectId: "testechoslate",
+      storageBucket: "testechoslate.appspot.com",
+      messagingSenderId: "987831629951",
+      appId: "1:987831629951:web:f37aeba48e5fc10b6ce74a"
+    };
+    const app = initializeApp(firebaseConfig);
+    console.log("Firebase initialized");
+  </script>
+
+  <!-- Link the external auth.js file (loaded on all pages) -->
+  <script type="module" src="/js/auth.js"></script>
+
+  <!-- Dark mode toggle-->
+  <script src="{{ "js/dark-mode-toggle.js" | relURL }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Desarrollo Full Stack on EchoSlate</title>
+    <link>http://localhost:1313/es/tags/desarrollo-full-stack/</link>
+    <description>Recent content in Desarrollo Full Stack on EchoSlate</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Fri, 18 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/tags/desarrollo-full-stack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jane Doe</title>
+      <link>http://localhost:1313/es/users/resumes/jane-doe/</link>
+      <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/users/resumes/jane-doe/</guid>
+      <description>&lt;h1 class=&#34;mt-6 mb-2 text-gray-900 dark:text-gray-100 text-4xl font-bold&#34;&gt;&#xA;  Jane Doe&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Correo Electrónico:&lt;/strong&gt; &lt;a href=&#34;mailto:jane.doe@example.com&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xA;    jane.doe@example.com&#xA;  &lt;/a&gt;&#xA;  &lt;br&gt;&#xA;&lt;strong&gt;Teléfono:&lt;/strong&gt; (123) 456-7890&lt;br&gt;&#xA;&lt;strong&gt;Ubicación:&lt;/strong&gt; San Francisco, CA, EE.UU.&lt;br&gt;&#xA;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://linkedin.com/in/janedoe&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xA;    linkedin.com/in/janedoe&#xA;  &lt;/a&gt;&#xA;  &lt;br&gt;&#xA;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/janedoe&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xA;    github.com/janedoe&#xA;  &lt;/a&gt;&#xA;  &lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 class=&#34;mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold&#34;&gt;&#xA;  Resumen Profesional&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Desarrolladora Full Stack con más de 5 años de experiencia en la creación de aplicaciones web utilizando JavaScript, Node.js y React. Apasionada por crear aplicaciones eficientes y escalables con un enfoque en la experiencia del usuario y la optimización del rendimiento.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-8">Resumes</h1>
+  <div class="prose dark:prose-dark mb-8">
+    {{ .Content }}
+  </div>
+
+  <!-- Display the list of resumes -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {{ range .Pages }}
+      {{ partial "resume-card.html" . }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

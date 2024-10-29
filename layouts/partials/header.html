@@ -1,0 +1,75 @@
+<header class="bg-gray-800 text-white p-4 fixed w-full z-10 dark:bg-gray-900">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo acting as Home Link, glowing blue on Home page -->
+        <div class="text-2xl font-bold">
+            <a href="{{ "/" | relLangURL }}" {{ if .IsHome }}style="color: #4A90E2;"{{ else }}class="text-white hover:text-gray-400"{{ end }}> EchoSlate </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="flex space-x-4">
+            {{ range .Site.Menus.main }}
+                <li>
+                    <a href="{{ .URL | relLangURL }}" {{ if eq .URL $.RelPermalink }}style="color: #4A90E2;"{{ else }}class="text-white hover:text-gray-400"{{ end }}> {{ .Name }} </a>
+                </li>
+            {{ end }}
+        </ul>
+
+        <!-- Right Side: Dark Mode Toggle and Language Switcher -->
+        <div class="flex items-center space-x-4">
+            <!-- Dark Mode Toggle Button -->
+            <button id="dark-mode-toggle" class="focus:outline-none" aria-label="Toggle dark mode">
+                <svg id="dark-mode-icon" class="w-6 h-6 text-white dark:text-yellow-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path id="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m6.364 1.636l-1.414 1.414M22 12h-2 M17.657 17.657l-1.414-1.414M12 22v-2 m-4.95-1.636l1.414-1.414M2 12h2 m1.636-4.95l1.414 1.414" />
+                    <path id="moon-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 0112.21 3 a9 9 0 100 18c4.63 0 8.44-3.5 8.79-7.9z" />
+                </svg>
+            </button>
+
+            <!-- Language Switcher -->
+            <div class="flex space-x-4">
+                {{ $en := index .Translations 0 }}
+                <a href="{{ if $en }}{{ $en.RelPermalink }}{{ else }}{{ "/en/" | relLangURL }}{{ end }}" {{ if eq .Lang "en" }}style="color: #4A90E2;"{{ else }}class="text-white hover:text-gray-400"{{ end }}> English </a>
+
+                {{ $es := index .Translations 1 }}
+                <a href="{{ if $es }}{{ $es.RelPermalink }}{{ else }}{{ "/es/" | relLangURL }}{{ end }}" {{ if eq .Lang "es" }}style="color: #4A90E2;"{{ else }}class="text-white hover:text-gray-400"{{ end }}> Español </a>
+
+                <!-- User Name Display and Dropdown Menu -->
+                <div class="relative">
+                    <button id="userHeader" class="text-lg font-bold" style="display: none;"></button>
+                    <div id="userDropdown" class="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg py-2 hidden">
+                        <a href="#" id="logoutButton" class="block px-4 py-2 text-sm hover:bg-gray-100">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Inline Script to Display User Email from localStorage -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const userHeader = document.getElementById("userHeader");
+            const userDropdown = document.getElementById("userDropdown");
+            const logoutButton = document.getElementById("logoutButton");
+            const storedEmail = localStorage.getItem("loggedInEmail");
+
+            // Show stored email if available
+            if (storedEmail && userHeader) {
+                userHeader.textContent = storedEmail;
+                userHeader.style.display = "block";
+                
+                // Toggle dropdown on user header click
+                userHeader.addEventListener("click", () => {
+                    userDropdown.classList.toggle("hidden");
+                });
+                
+                // Clear storage and reload on logout
+                logoutButton.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    localStorage.removeItem("loggedInEmail");
+                    location.reload(); // Reload to reset UI
+                });
+            } else if (userHeader) {
+                userHeader.style.display = "none";
+            }
+        });
+    </script>
+</header>

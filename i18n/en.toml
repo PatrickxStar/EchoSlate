@@ -1,0 +1,92 @@
+[welcomeMessage]
+other = "Welcome to EchoSlate"
+
+[welcomeSubtitle]
+other = "Your digital portfolio to showcase resumes and projects."
+
+[exploreUsers]
+other = "Explore Users"
+
+[loginTitle]
+other = "Login"
+
+[usernamePlaceholder]
+other = "Username"
+
+[passwordPlaceholder]
+other = "Password"
+
+[loginButton]
+other = "Login"
+
+[registerTitle]
+other = "Register"
+
+[newUsernamePlaceholder]
+other = "New Username"
+
+[newPasswordPlaceholder]
+other = "New Password"
+
+[registerButton]
+other = "Register"
+
+[users]
+other = "Users"
+
+[edit]
+other = "Edit"
+
+[upload]
+other = "Upload"
+
+[search]
+other = "Search"
+
+[about]
+other = "About"
+
+[contact]
+other = "Contact"
+
+[footerText]
+other = "© 2024 EchoSlate. All rights reserved."
+
+[viewResume]
+other = "View Resume"
+
+[viewProfile]
+other = "View Profile"
+
+[whyChooseTitle]
+other = "Why Choose EchoSlate?"
+
+[platformDescription]
+other = "A platform designed for developers and analysts to showcase their talents."
+
+[showcaseWorkTitle]
+other = "Showcase Your Work"
+
+[showcaseWorkDescription]
+other = "Create a profile to highlight your projects and achievements."
+
+[connectPeersTitle]
+other = "Connect with Peers"
+
+[connectPeersDescription]
+other = "Engage with a community of professionals in your field."
+
+[discoverOpportunitiesTitle]
+other = "Discover Opportunities"
+
+[discoverOpportunitiesDescription]
+other = "Find collaborations and projects that match your skills."
+
+[searchTitle]
+other = "Search"
+
+[searchPlaceholder]
+other = "Type to search..."
+
+[noResults]
+other = "No results found."

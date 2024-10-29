@@ -1,0 +1,10 @@
+{{ $isOrdered := .Ordered }}
+{{ if $isOrdered }}
+<ol class="list-decimal list-inside">
+  {{ .Content | safeHTML }}
+</ol>
+{{ else }}
+<ul class="list-disc list-inside">
+  {{ .Content | safeHTML }}
+</ul>
+{{ end }}

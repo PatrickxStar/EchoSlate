@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-6">{{ i18n "searchTitle" }}</h1>
+
+    <!-- Search Input -->
+    <div class="relative">
+      <input
+        type="text"
+        id="search-input"
+        aria-label="{{ i18n "searchPlaceholder" }}"
+        placeholder="{{ i18n "searchPlaceholder" }}"
+        class="w-full p-3 border rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-600 text-black"
+        style="color: black;"
+      >
+    </div>
+
+    <!-- Search Results -->
+    <div id="search-results" class="mt-6 space-y-4 text-black">
+      <!-- Results will be injected here by JavaScript -->
+    </div>
+  </section>
+
+  <!-- Include Fuse.js and your custom search script -->
+  <script src="{{ "js/fuse.min.js" | relURL }}"></script>
+  <script src="{{ "js/search.js" | relURL }}"></script>
+{{ end }}

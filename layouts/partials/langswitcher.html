@@ -1,0 +1,6 @@
+<div class="language-switcher">
+    {{ range .Site.Languages }}
+      <a href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a>
+    {{ end }}
+  </div>
+  

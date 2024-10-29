@@ -1,0 +1,4 @@
+{{- $level := .Level -}}
+<h{{ $level }} class="mt-6 mb-2 text-gray-900 dark:text-gray-100 {{ if eq $level 1 }}text-4xl font-bold{{ else if eq $level 2 }}text-3xl font-semibold{{ else if eq $level 3 }}text-2xl font-semibold{{ else if eq $level 4 }}text-xl font-medium{{ else }}text-lg font-medium{{ end }}">
+  {{ .Text | safeHTML }}
+</h{{ $level }}>

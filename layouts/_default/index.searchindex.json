@@ -1,0 +1,12 @@
+{{/* layouts/_default/index.searchindex.json */}}
+[
+  {{- $pages := .Site.Pages -}}
+  {{- range $index, $page := $pages -}}
+    {{- if gt $index 0 }},{{ end }}
+    {
+      "title": {{ $page.Title | jsonify }},
+      "permalink": {{ $page.RelPermalink | jsonify }},
+      "content": {{ $page.Plain | jsonify }}
+    }
+  {{- end }}
+]

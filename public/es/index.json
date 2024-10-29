@@ -1,0 +1,73 @@
+
+[
+    {
+      "title": "Home",
+      "permalink": "/es/home/",
+      "content": ""
+    },
+    {
+      "title": "Inicio",
+      "permalink": "/es/",
+      "content": " Bienvenido a EchoSlate EchoSlate es tu plataforma digital para mostrar currículums y proyectos en Desarrollo Full Stack, Análisis de Datos y Ciberseguridad.\nCrea un perfil para destacar tus habilidades. Sube tu currículum y comparte tu experiencia. Conéctate con profesionales en tu campo. Comenzar | Más Información "
+    },
+    {
+      "title": "Search",
+      "permalink": "/es/search/",
+      "content": ""
+    },
+    {
+      "title": "Upload",
+      "permalink": "/es/upload/",
+      "content": ""
+    },
+    {
+      "title": "Edit",
+      "permalink": "/es/edit/",
+      "content": ""
+    },
+    {
+      "title": "Contact",
+      "permalink": "/es/contact/",
+      "content": ""
+    },
+    {
+      "title": "About",
+      "permalink": "/es/about/",
+      "content": " Welcome to EchoSlate. We are committed to showcasing your talents. "
+    },
+    {
+      "title": "Desarrollo Full Stack",
+      "permalink": "/es/tags/desarrollo-full-stack/",
+      "content": ""
+    },
+    {
+      "title": "Jane Doe",
+      "permalink": "/es/users/resumes/jane-doe/",
+      "content": " Jane Doe Correo Electrónico: jane.doe@example.com Teléfono: (123) 456-7890\nUbicación: San Francisco, CA, EE.UU.\nLinkedIn: linkedin.com/in/janedoe GitHub: github.com/janedoe Resumen Profesional Desarrolladora Full Stack con más de 5 años de experiencia en la creación de aplicaciones web utilizando JavaScript, Node.js y React. Apasionada por crear aplicaciones eficientes y escalables con un enfoque en la experiencia del usuario y la optimización del rendimiento.\nHabilidades Lenguajes de Programación: JavaScript (ES6+), TypeScript, Python, Java Frameworks y Librerías: React, Node.js, Express.js, Next.js Bases de Datos: MongoDB, PostgreSQL, MySQL Herramientas y Plataformas: Git, Docker, AWS, Jenkins, CI/CD Otros: APIs RESTful, GraphQL, Agile/Scrum, TDD/BDD Experiencia Desarrolladora Full Stack Senior ABC Tech Solutions, San Francisco, CA\nJunio 2020 – Presente\nLideró el desarrollo de una aplicación web para clientes utilizando React y Node.js, mejorando el rendimiento en un 30%. Colaboró con equipos multifuncionales para diseñar e implementar nuevas funcionalidades, aumentando el compromiso de los usuarios en un 25%. Mentora de desarrolladores junior y realizó revisiones de código para mantener la calidad y las mejores prácticas. Desarrolladora Full Stack XYZ Innovations, San Francisco, CA\nAgosto 2017 – Mayo 2020\nDesarrolló y mantuvo aplicaciones web utilizando Django y React, sirviendo a más de 50,000 usuarios. Implementó APIs RESTful e integró servicios de terceros, reduciendo el tiempo de recuperación de datos en un 40%. Optimizó consultas de bases de datos, reduciendo los tiempos de carga en un 25% y mejorando la escalabilidad de la aplicación. Educación Licenciatura en Ciencias de la Computación Universidad de California, Berkeley\n2013 – 2017\nGPA: 3.8/4.0 Cursos Relevantes: Estructuras de Datos, Algoritmos, Sistemas de Bases de Datos, Ingeniería de Software, Aprendizaje Automático Proyectos Plataforma de Comercio Electrónico: Construyó una plataforma escalable de comercio electrónico utilizando Node.js y React, manejando más de 10,000 usuarios diarios. Aplicación de Chat en Tiempo Real: Desarrolló una aplicación de chat utilizando WebSocket y Node.js, soportando comunicación en tiempo real para 5,000 usuarios concurrentes. Sitio Web de Portafolio: Creó un sitio web de portafolio personal utilizando Next.js y Tailwind CSS para mostrar proyectos y blogs. Certificaciones AWS Certified Solutions Architect – Associate Certified ScrumMaster (CSM) Oracle Certified Java Programmer Idiomas Inglés: Nativo Español: Fluido Referencias Disponibles a solicitud.\nDescargar Currículum en PDF "
+    },
+    {
+      "title": "Node.js",
+      "permalink": "/es/tags/node.js/",
+      "content": ""
+    },
+    {
+      "title": "React",
+      "permalink": "/es/tags/react/",
+      "content": ""
+    },
+    {
+      "title": "Tags",
+      "permalink": "/es/tags/",
+      "content": ""
+    },
+    {
+      "title": "Users",
+      "permalink": "/es/users/",
+      "content": ""
+    },
+    {
+      "title": "Categories",
+      "permalink": "/es/categories/",
+      "content": ""
+    }
+]
