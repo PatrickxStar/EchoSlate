@@ -1,24 +1,24 @@
 
 +++
 title = "Patrick's Resume"
-date = "2024-10-29T14:24:04.465Z"
+date = "2024-10-30T13:19:08.048Z"
 type = "resume"
 draft = false
 description = "Resume for Patrick"
 name = "Patrick"
-email = "patrickxiong0825@gmail.com"
+email = "pxstiegler@gmail.com"
 phone = "7104589794"
-github = "https://github.com/"
-resumeFile = "resume-1730211844314.pdf"
-image = "images/users/profileImage-1730211844257.jpeg"
+github = "https://github.com/oliu"
+resumeFile = "resume-1730294347756.pdf"
+image = "images/users/profileImage-1730294347725.jpeg"
 +++
 
 ## Contact Information
 
 - **Name:** Patrick
-- **Email:** [patrickxiong0825@gmail.com](mailto:patrickxiong0825@gmail.com)
+- **Email:** [pxstiegler@gmail.com](mailto:pxstiegler@gmail.com)
 - **Phone:** 7104589794
-- **GitHub:** [https://github.com/](https://github.com/)
+- **GitHub:** [https://github.com/oliu](https://github.com/oliu)
 
 ---
 
@@ -37,7 +37,7 @@ WORK EXPERIENCES Programming (Java) Infrastructure SQL System Administration IT 
 
 ## View Resume
 
-You can [download the resume](/files/resume-1730211844314.pdf) or view it below:
+You can [download the resume](/files/resume-1730294347756.pdf) or view it below:
 
-<embed src="/files/resume-1730211844314.pdf" width="800" height="600" type="application/pdf" />
+<embed src="/files/resume-1730294347756.pdf" width="800" height="600" type="application/pdf" />
     

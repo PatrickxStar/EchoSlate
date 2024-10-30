@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan&#39;s Resume | EchoSlate</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh; margin: 0; padding: 0;" class="bg-gray-200 dark:bg-gray-800 dark:text-white">
+
+  
+  <header class="bg-gray-800 text-white p-4 fixed w-full z-10 dark:bg-gray-900">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center">
+        
+        <div class="text-2xl font-bold">
+            <a href="/" class="text-white hover:text-gray-400"> EchoSlate </a>
+        </div>
+
+        
+        <ul class="flex space-x-4">
+            
+                <li>
+                    <a href="/users/" class="text-white hover:text-gray-400"> Users </a>
+                </li>
+            
+                <li>
+                    <a href="/upload/" class="text-white hover:text-gray-400"> Upload </a>
+                </li>
+            
+                <li>
+                    <a href="/search/" class="text-white hover:text-gray-400"> Search </a>
+                </li>
+            
+                <li>
+                    <a href="/about/" class="text-white hover:text-gray-400"> About </a>
+                </li>
+            
+                <li>
+                    <a href="/contact/" class="text-white hover:text-gray-400"> Contact </a>
+                </li>
+            
+        </ul>
+
+        
+        <div class="flex items-center space-x-4">
+            
+            <button id="dark-mode-toggle" class="focus:outline-none" aria-label="Toggle dark mode">
+                <svg id="dark-mode-icon" class="w-6 h-6 text-white dark:text-yellow-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path id="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m6.364 1.636l-1.414 1.414M22 12h-2 M17.657 17.657l-1.414-1.414M12 22v-2 m-4.95-1.636l1.414-1.414M2 12h2 m1.636-4.95l1.414 1.414" />
+                    <path id="moon-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 0112.21 3 a9 9 0 100 18c4.63 0 8.44-3.5 8.79-7.9z" />
+                </svg>
+            </button>
+
+            
+            <div class="flex space-x-4">
+                
+                <a href="/en/" style="color: #4A90E2;"> English </a>
+
+                
+                <a href="/es/" class="text-white hover:text-gray-400"> Español </a>
+
+                
+                <div class="relative">
+                    <button id="userHeader" class="text-lg font-bold" style="display: none;"></button>
+                    <div id="userDropdown" class="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg py-2 hidden">
+                        <a href="#" id="logoutButton" class="block px-4 py-2 text-sm hover:bg-gray-100">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const userHeader = document.getElementById("userHeader");
+            const userDropdown = document.getElementById("userDropdown");
+            const logoutButton = document.getElementById("logoutButton");
+            const storedEmail = localStorage.getItem("loggedInEmail");
+
+            
+            if (storedEmail && userHeader) {
+                userHeader.textContent = storedEmail;
+                userHeader.style.display = "block";
+                
+                
+                userHeader.addEventListener("click", () => {
+                    userDropdown.classList.toggle("hidden");
+                });
+                
+                
+                logoutButton.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    localStorage.removeItem("loggedInEmail");
+                    location.reload(); 
+                });
+            } else if (userHeader) {
+                userHeader.style.display = "none";
+            }
+        });
+    </script>
+</header>
+
+  
+  <div style="flex-grow: 1;">
+    <main class="py-16">
+      
+<article class="prose dark:prose-dark mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Contact Information
+</h2>
+<ul>
+<li><strong>Name:</strong> Ryan</li>
+<li><strong>Email:</strong> <a href="mailto:panagrosso.ryan@gmail.com" class="text-blue-600 hover:text-blue-800 underline">
+    panagrosso.ryan@gmail.com
+  </a>
+  </li>
+<li><strong>Phone:</strong> (860) 334-5848</li>
+<li><strong>GitHub:</strong> <a href="https://github.com/RPana97" class="text-blue-600 hover:text-blue-800 underline">
+    https://github.com/RPana97
+  </a>
+  </li>
+</ul>
+<hr>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Introduction
+</h2>
+<p>Ryan Panagrosso <a href="mailto:Panagrosso.ryan@gmail.com" class="text-blue-600 hover:text-blue-800 underline">
+    Panagrosso.ryan@gmail.com
+  </a>
+   | (860)334-5848 | Wilmington, NC 28403 Recent Marine Biology graduate transitioning into software development through an apprenticeship at Stiegler EdTech.</p>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Education
+</h2>
+<p>Education University of North Carolina Wilmington (UNCW) October 2017 – May 2023 GPA: 3.023 Bachelor’s in Marine Biology with a focus on Conservation. BioWork Certificate at Central Carolina Community College (CCCC) June 2021</p>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Skills
+</h2>
+<p>Proficient in full-stack development, JavaScript, HTML, CSS, and Java. Seeking to leverage technical skills and diverse work Skills/Qualifications • Full-stack web development • JavaScript, HTML, CSS, Node.js, SQL • Java fundamentals and frameworks • Git/GitHub, APIs, MVC model • Object-oriented programming • Command Line proficiency • SOP compliance and safety</p>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Experience
+</h2>
+<p>experience in a software development role. Work Experience Stiegler EdTech Software Development Apprentice February 2024 – Present • Completed an intensive 24-week program covering: o Computing/Development basics o Fundamentals of front-end development o JavaScript, Node.js, jQuery, Ajax o APIs, MVC model, SQL, databases o Object-oriented programming, Java, Java frameworks, JUnit testing o Full-stack web development, deployment, and team projects • Developed a rock-paper-scissors game using HTML, CSS, and JavaScript • Created a to-do application using HTML, CSS, and JavaScript • Implemented a mock API to simulate fetching user data with JavaScript promises NC Army National Guard Human Resource Specialist October 2016 – Present • Maintained personal equipment and ensured other equipment was cleaned and correctly stored after use. • Followed SOPs to ensure equipment was properly accounted for and maintained. • Successfully managed a small diverse group of individuals in conduct of individual tasks and assignments. • Helped soldiers maintain and improve their weight training by instructing proper form. • Selected to provide instruction to more than 40 soldiers. • Maintained a clean and sanitized working space. • Ensured safe procedures were followed at ranges. • Trained to aid personnel with setting up insurances, help with pay issues, and personnel tracking which includes one on one contact engaging remotely or face-to-face. • Engaged with a large diverse group of individuals from different backgrounds.</p>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  View Resume
+</h2>
+<p>You can <a href="/files/resume-1730302146987.pdf" class="text-blue-600 hover:text-blue-800 underline">
+    download the resume
+  </a>
+   or view it below:</p>
+<embed src="/files/resume-1730302146987.pdf" width="800" height="600" type="application/pdf" />
+
+</article>
+
+    </main>
+  </div>
+
+  
+  <footer style="width: 100%; background-color: #111827; color: #9ca3af; text-align: center; padding: 2rem; position: relative;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <p>© 2024 EchoSlate. All rights reserved.</p>
+    </div>
+</footer>
+
+ 
+
+  
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyA9w_PQS8HnG4q4PjW8fQN1isBzftDeZBE",
+      authDomain: "testechoslate.firebaseapp.com",
+      projectId: "testechoslate",
+      storageBucket: "testechoslate.appspot.com",
+      messagingSenderId: "987831629951",
+      appId: "1:987831629951:web:f37aeba48e5fc10b6ce74a"
+    };
+    const app = initializeApp(firebaseConfig);
+    console.log("Firebase initialized");
+  </script>
+
+  
+  <script type="module" src="/js/auth.js"></script>
+
+  
+  <script src="/js/dark-mode-toggle.js"></script>
+
+</body>
+</html>
