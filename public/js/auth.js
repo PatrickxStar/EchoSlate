@@ -1,6 +1,7 @@
 // Import Firebase SDKs
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+import { getApps } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
 
 // Firebase configuration
 const firebaseConfig = {
@@ -52,18 +53,45 @@ onAuthStateChanged(auth, (user) => {
   }
 });
 
+// Handle registration form submission
+document.getElementById("registerForm")?.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const email = document.getElementById("registerEmail").value;
+  const password = document.getElementById("registerPassword").value;
+
+  console.log("Register form submitted with:", email, password); // Debugging output
+  console.log("Attempting to create a user...");
+
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      const user = userCredential.user;
+      console.log("User created successfully:", user);
+      alert("Registration successful!");
+      updateUserHeader(user.email); // Show email after registration
+    })
+    .catch((error) => {
+      console.error("Error during user creation:", error.code, error.message); // Show full error details
+      alert(`Error: ${error.message}`);
+    });
+});
+
 // Handle login form submission
 document.getElementById("loginForm")?.addEventListener("submit", function (e) {
   e.preventDefault();
   const email = document.getElementById("loginEmail").value;
   const password = document.getElementById("loginPassword").value;
 
+  console.log("Login form submitted with:", email, password); // Debugging output
+
   signInWithEmailAndPassword(auth, email, password)
-    .then(() => {
+    .then((userCredential) => {
+      const user = userCredential.user;
       alert("Login successful!");
+      updateUserHeader(user.email); // Show email after login
       location.reload(); // Reload to apply changes across all pages
     })
     .catch((error) => {
+      console.error("Error during login:", error.code, error.message); // Show full error details
       alert(`Error: ${error.message}`);
     });
 });

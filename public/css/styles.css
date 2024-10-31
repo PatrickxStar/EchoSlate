@@ -1364,3 +1364,24 @@ body {
 #userDropdown a:hover {
   background-color: #f0f0f0;
 }
+/* Align items vertically for mobile view */
+@media (max-width: 640px) {
+    .max-w-7xl {
+        flex-direction: column;
+    }
+
+    /* Adjust spacing for navigation links */
+    nav ul {
+        margin-top: 10px;
+    }
+}
+
+ /*Center-align the content under the logo */
+nav ul {
+  text-align: center;
+}
+
+.dark-mode-toggle, .language-switcher {
+  display: inline-block;
+  margin-left: auto;
+}
