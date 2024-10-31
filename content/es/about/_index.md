@@ -21,11 +21,44 @@ En EchoSlate, creemos que cada profesional merece una plataforma que refleje con
 
 ## **Conoce al Equipo**
 
-EchoSlate es desarrollado por un equipo apasionado de diseñadores, desarrolladores y coaches de carrera dedicados a ayudar a los profesionales a presentarse de manera efectiva en la era digital.
+EchoSlate es desarrollado por un equipo apasionado de diseñadores, desarrolladores y expertos en seguridad dedicados a ayudar a los profesionales a presentarse de manera efectiva en la era digital.
 
-- **Jane Doe** – *Gerente de Proyecto & Diseñadora UX*
-- **John Smith** – *Desarrollador Principal & Especialista Backend*
-- **Emily Davis** – *Estratega de Contenido & Líder de Marketing*
+- **Dean Mastria** – *Scrum Master & Líder de Accesibilidad*
+  
+  - **Responsabilidades:**
+    - Supervisar la gestión del proyecto como Scrum Master, asegurando una coordinación fluida y el cumplimiento de los plazos.
+    - Liderar los estándares ARIA y de accesibilidad para hacer que el sitio sea inclusivo y cumpla con las normativas.
+    - Realizar revisiones iniciales de código y estructura para mantener la modularidad del código y asegurar su mantenibilidad.
+    - Implementar prácticas de pruebas continuas y asistir a los miembros del equipo con diversas tareas según sea necesario.
+
+- **Ryan Panagrosso** – *Desarrollador Front-End & Diseñador de Bases de Datos*
+  
+  - **Responsabilidades:**
+    - Enfocarse en el desarrollo front-end, creando un diseño de sitio web intuitivo y responsive.
+    - Colaborar con Patrick en el diseño de la estructura de la base de datos, asegurando que los datos estén organizados para una recuperación y almacenamiento óptimos.
+    - Implementar media queries para un diseño responsive en múltiples tipos de dispositivos.
+
+- **Tommy Mulligan** – *Líder de Seguridad & Autenticación*
+  
+  - **Responsabilidades:**
+    - Desarrollar la sección hero y manejar la funcionalidad de inicio de sesión/contraseña, enfocándose en la autenticación de usuarios.
+    - Implementar la autenticación de administradores y usuarios, incluyendo el manejo seguro de contraseñas.
+    - Asegurar el cumplimiento de la seguridad contra XSS y la protección contra otras vulnerabilidades potenciales.
+
+- **Simon Chang** – *Navegación & Pruebas*
+  
+  - **Responsabilidades:**
+    - Desarrollar la funcionalidad de carga de archivos, asegurando un manejo fluido y seguro de las cargas de usuarios.
+    - Implementar la funcionalidad de botones y la navegación del sitio para una experiencia de usuario cohesiva.
+    - Realizar pruebas para identificar y resolver problemas, asegurando una funcionalidad confiable en todo el sitio.
+
+- **Patrick Xiong** – *Diseñador de Bases de Datos & Revisor Secundario*
+  
+  - **Responsabilidades:**
+    - Liderar el soporte multilingüe, implementando opciones de idioma para hacer que el sitio sea accesible a una audiencia diversa.
+    - Colaborar con Ryan en el diseño de la estructura de la base de datos, asegurando que los datos estén organizados para una recuperación y almacenamiento óptimos.
+    - Realizar revisiones secundarias de código y estructura, asegurando la calidad y el cumplimiento de los estándares del proyecto.
+
 
 ## **Participa**
 

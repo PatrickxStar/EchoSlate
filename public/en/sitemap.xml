@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/users/resumes/dean_mastria_resume/</loc>
+    <lastmod>2024-10-31T13:08:42+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-30T13:19:08+00:00</lastmod>
+    <lastmod>2024-10-31T13:08:42+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -15,13 +18,19 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/users/resumes/patrick_resume/</loc>
-    <lastmod>2024-10-30T13:19:08+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/users/resumes/</loc>
-    <lastmod>2024-10-30T13:19:08+00:00</lastmod>
+    <lastmod>2024-10-31T13:08:42+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/users/</loc>
+    <lastmod>2024-10-31T13:08:42+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/users/resumes/ryan_resume/</loc>
+    <lastmod>2024-10-30T15:29:07+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/users/resumes/tommy_resume/</loc>
+    <lastmod>2024-10-30T15:26:51+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/users/resumes/patrick_resume/</loc>
     <lastmod>2024-10-30T13:19:08+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/users/resumes/simon_chang_resume/</loc>
@@ -51,51 +60,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/upload/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/users/resumes/dean/</loc>
-    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/full-stack-development/</loc>
-    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/node.js/</loc>
-    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/tags/node.js/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/node.js/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/react/</loc>
-    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/tags/react/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/react/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/about/</loc>
@@ -144,6 +108,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/search/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/thank-you.md/</loc>

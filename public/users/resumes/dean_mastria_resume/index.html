@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dean Mastria&#39;s Resume | EchoSlate</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh; margin: 0; padding: 0;" class="bg-gray-200 dark:bg-gray-800 dark:text-white">
+
+  
+  <header class="bg-gray-800 text-white p-4 fixed w-full z-10 dark:bg-gray-900">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center">
+        
+        <div class="text-2xl font-bold">
+            <a href="/" class="text-white hover:text-gray-400"> EchoSlate </a>
+        </div>
+
+        
+        <ul class="flex space-x-4">
+            
+                <li>
+                    <a href="/users/" class="text-white hover:text-gray-400"> Users </a>
+                </li>
+            
+                <li>
+                    <a href="/upload/" class="text-white hover:text-gray-400"> Upload </a>
+                </li>
+            
+                <li>
+                    <a href="/search/" class="text-white hover:text-gray-400"> Search </a>
+                </li>
+            
+                <li>
+                    <a href="/about/" class="text-white hover:text-gray-400"> About </a>
+                </li>
+            
+                <li>
+                    <a href="/contact/" class="text-white hover:text-gray-400"> Contact </a>
+                </li>
+            
+        </ul>
+
+        
+        <div class="flex items-center space-x-4">
+            
+            <button id="dark-mode-toggle" class="focus:outline-none" aria-label="Toggle dark mode">
+                <svg id="dark-mode-icon" class="w-6 h-6 text-white dark:text-yellow-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path id="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m6.364 1.636l-1.414 1.414M22 12h-2 M17.657 17.657l-1.414-1.414M12 22v-2 m-4.95-1.636l1.414-1.414M2 12h2 m1.636-4.95l1.414 1.414" />
+                    <path id="moon-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 0112.21 3 a9 9 0 100 18c4.63 0 8.44-3.5 8.79-7.9z" />
+                </svg>
+            </button>
+
+            
+            <div class="flex space-x-4">
+                
+                <a href="/en/" style="color: #4A90E2;"> English </a>
+
+                
+                <a href="/es/" class="text-white hover:text-gray-400"> Español </a>
+
+                
+                <div class="relative">
+                    <button id="userHeader" class="text-lg font-bold" style="display: none;"></button>
+                    <div id="userDropdown" class="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg py-2 hidden">
+                        <a href="#" id="logoutButton" class="block px-4 py-2 text-sm hover:bg-gray-100">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const userHeader = document.getElementById("userHeader");
+            const userDropdown = document.getElementById("userDropdown");
+            const logoutButton = document.getElementById("logoutButton");
+            const storedEmail = localStorage.getItem("loggedInEmail");
+
+            
+            if (storedEmail && userHeader) {
+                userHeader.textContent = storedEmail;
+                userHeader.style.display = "block";
+                
+                
+                userHeader.addEventListener("click", () => {
+                    userDropdown.classList.toggle("hidden");
+                });
+                
+                
+                logoutButton.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    localStorage.removeItem("loggedInEmail");
+                    location.reload(); 
+                });
+            } else if (userHeader) {
+                userHeader.style.display = "none";
+            }
+        });
+    </script>
+</header>
+
+  
+  <div style="flex-grow: 1;">
+    <main class="py-16">
+      
+<article class="prose dark:prose-dark mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Contact Information
+</h2>
+<ul>
+<li><strong>Name:</strong> Dean Mastria</li>
+<li><strong>Email:</strong> <a href="mailto:mastria.dm@gmail.com" class="text-blue-600 hover:text-blue-800 underline">
+    mastria.dm@gmail.com
+  </a>
+  </li>
+<li><strong>Phone:</strong> 555-867-5309</li>
+<li><strong>GitHub:</strong> <a href="https://github.com/deanmastria" class="text-blue-600 hover:text-blue-800 underline">
+    https://github.com/deanmastria
+  </a>
+  </li>
+</ul>
+<hr>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Introduction
+</h2>
+<p>Financial Service Associate/</p>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Education
+</h2>
+<p>EDUCATION Certified Technical Apprentice Course (CTAC) Google Data Analytics Certification Coursera Managed the receipt and delivery of critical supplies throughout the medical campus worth $100M+ monthly Analyzed logistics data to improve organization, record-keeping, and distribution. Implemented process improvements and optimization in support of operational throughput Novant Health Materials Management Coordinator Oct 2023 - Feb 2024 Mar 2023 - Oct 2023 Feb 2022 - Feb 2023 May 2024- Present Jul 2021 - Feb 2022</p>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Skills
+</h2>
+<p>communication skills within development teams. Actively support fellow students with projects and assignments, fostering a collaborative learning environment. Led team of 4 to develop a web application for a retail store, demonstrating leadership and technical proficiency. Solutions-oriented Fullstack developer with a strong background in project leadership and data analysis. Proven track record in implementing successful projects with integrity and accuracy in high-pressure environments. Adept at collaborating with cross-functional teams and leading initiatives to achieve business goals. Aiming to leverage analytical and project management expertise to provide data-driven insights and maximize organizational value. Team Leadership Skilled Collaborator Strategic Planning Task Prioritization Detail-Focused Cross-functional Communication Financial Reporting Full-stack Development Data Analytics Programing Languages HTML, CSS, JavaScript, Java, Typescript, SQL Web Frameworks Node.js, React, Express, Hugo Additional Skills API Design and implementation MVC architecture OOP principles Deployment GitLab, GitHub Project Management Working knowledge of PMBOK standards including Agile, Scrum Wilmington, North Carolina | 540-409-6552 | <a href="mailto:dean.mastria@gmail.com" class="text-blue-600 hover:text-blue-800 underline">
+    dean.mastria@gmail.com
+  </a>
+   | linkedin.com/in/deanmastria/ Dean Mastria KEY SKILLS East Carolina University Bachelor of Science in Business Management and Entrepreneurial Studies Notary Public - North Carolina</p>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Experience
+</h2>
+<p>Customer Experience Coordinator TD Bank Assistant Manager PROFESSIONAL EXPERIENCE Managed over 300 accounts, identifying financial solutions via CRM systems and data analysis. Exceeded quarterly sales goals by 30% while consistently meeting customer and sales-driven key performance indexes to increase business Analyzed and presented daily/weekly data reports to management, identifying trends and client opportunities. Managed schedules, requisitions and task tracking for financial service projects across multiple systems and software. Led a team of 10 during branch expansion, providing training and onboarding support. Resolved complex client issues and financial requests, ensuring operational accuracy through coordination with cross-functional teams. Built strong relationships with clients through regular communication and transparent reporting . Identified process inefficiencies and implemented new streamlined workflows resulting in faster turnaround and improved performance. Stiegler EdTech LLC CTAC Program Applied theoretical knowledge in practical settings through full-stack development and data analytics projects. Planned, executed, and oversaw full-stack development projects, ensuring they were completed on time and within budget. Engaged in team-based projects and peer reviews to enhance collaboration and</p>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  View Resume
+</h2>
+<p>You can <a href="/files/resume-1730380122198.pdf" class="text-blue-600 hover:text-blue-800 underline">
+    download the resume
+  </a>
+   or view it below:</p>
+<embed src="/files/resume-1730380122198.pdf" width="800" height="600" type="application/pdf" />
+
+</article>
+
+    </main>
+  </div>
+
+  
+  <footer style="width: 100%; background-color: #111827; color: #9ca3af; text-align: center; padding: 2rem; position: relative;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <p>© 2024 EchoSlate. All rights reserved.</p>
+    </div>
+</footer>
+
+ 
+
+  
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyA9w_PQS8HnG4q4PjW8fQN1isBzftDeZBE",
+      authDomain: "testechoslate.firebaseapp.com",
+      projectId: "testechoslate",
+      storageBucket: "testechoslate.appspot.com",
+      messagingSenderId: "987831629951",
+      appId: "1:987831629951:web:f37aeba48e5fc10b6ce74a"
+    };
+    const app = initializeApp(firebaseConfig);
+    console.log("Firebase initialized");
+  </script>
+
+  
+  <script type="module" src="/js/auth.js"></script>
+
+  
+  <script src="/js/dark-mode-toggle.js"></script>
+
+</body>
+</html>
