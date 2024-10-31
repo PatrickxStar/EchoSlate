@@ -17,6 +17,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
+// Flag to check if the user is currently registering
+let isRegistering = false;
+
 // Function to update the user information in the header
 function updateUserHeader(email) {
   const userHeader = document.getElementById("userHeader");
@@ -42,7 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Auth state listener to handle session persistence across all pages
 onAuthStateChanged(auth, (user) => {
-  if (user) {
+  if (user && !isRegistering) {
+    // Only update the header if not currently registering
     updateUserHeader(user.email);
   } else {
     const userHeader = document.getElementById("userHeader");
@@ -62,16 +66,19 @@ document.getElementById("registerForm")?.addEventListener("submit", function (e)
   console.log("Register form submitted with:", email, password); // Debugging output
   console.log("Attempting to create a user...");
 
+  // Set isRegistering to true to prevent header update
+  isRegistering = true;
+
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      const user = userCredential.user;
-      console.log("User created successfully:", user);
-      alert("Registration successful!");
-      updateUserHeader(user.email); // Show email after registration
+      console.log("User created successfully:", userCredential.user);
+      alert("Registration successful! Please log in.");
+      isRegistering = false; // Reset the flag after registration
     })
     .catch((error) => {
       console.error("Error during user creation:", error.code, error.message); // Show full error details
       alert(`Error: ${error.message}`);
+      isRegistering = false; // Reset the flag if there's an error
     });
 });
 
